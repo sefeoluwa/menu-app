@@ -9,7 +9,7 @@ import {
         home8,
         home9,
         home31, 
-    } from "./assets"
+    } from "../assets"
     
 
     const heroScreens = [

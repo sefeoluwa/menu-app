@@ -1,15 +1,16 @@
 import {About, Footer, Hero, Navbar} from "./components"
 import { BrowserRouter } from "react-router-dom"
 
+
 function App() {
   
   return (
     <BrowserRouter>
-      <div className="relative ">
+      <div className= "bg-primary py-4 h-20">
       <Navbar />
-      <Hero />
+       </div>
+       <Hero />
       <About />
-      </div>
       <Footer />
 
     </BrowserRouter>

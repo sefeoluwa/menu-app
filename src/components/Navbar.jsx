@@ -30,8 +30,8 @@ const Navbar = () => {
       </div>
 
 
-      <div className="flex justify-center -ml-44 flex-1">
-        <ul className="list-none hidden justify-between w-1/4  sm:flex flex-row gap-10">
+      <div className="flex justify-center  -ml-44 flex-1">
+        <ul className="list-none hidden z-50 justify-between w-1/4  sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
               key={link.id}

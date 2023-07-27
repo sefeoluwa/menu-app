@@ -17,3 +17,15 @@
     justify-content: center;
      gap: 2rem; 
    }
+
+   .rectangular-box {
+    width: 989px;
+    height: 446px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: #FCFBE4;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 10px 10px 4px 0px #000;
+    margin-top: 9vh; 
+  }
+  
+  

@@ -1,5 +1,4 @@
 /* eslint-disable react-refresh/only-export-components */
-import { motion } from 'framer-motion';
 import { heroScreens } from "../constants";
 import { styles } from "../styles";
 import SectionWrapper from '../hoc/SectionWrapper';
@@ -17,7 +16,7 @@ function Hero() {
               <img
                 src={homeScreens.image}
                 alt={homeScreens.name}
-                className={` ${index === 1 ? marginTopForSecondImage : ''}`}
+                className={` ${index === 1 ? marginTopForSecondImage : ''} shadow-2xl transition-transform transform scale-100 hover:scale-110 cursor-pointer`}
               />
             </div>
           );

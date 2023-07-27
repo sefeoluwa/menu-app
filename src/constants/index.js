@@ -13,15 +13,15 @@ import {
     
 
     const heroScreens = [
-        {
-            name: "home9",
-            image: home9,
-        },
+      {
+        name: "home7",
+        image: home7,
+    },
         {
             name: "home8",
             image: home8,
         },
-    ]
+  ]
 
     const screens = [
        { 

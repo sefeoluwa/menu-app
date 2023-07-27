@@ -1,13 +1,15 @@
+/* eslint-disable react-refresh/only-export-components */
 import { motion } from 'framer-motion';
 import { heroScreens } from "../constants";
 import { styles } from "../styles";
+import SectionWrapper from '../hoc/SectionWrapper';
 
 
 function Hero() {
   const marginTopForSecondImage = 'mt-3';
   return (
     <>
-          <p className={`${styles.heroHeadText} pt-16`}>Be a Part of My Menu</p>
+          <p className={`${styles.heroHeadText}`}>Be a Part of My Menu</p>
       <div className=" mt-9 div-map">
         {heroScreens.map((homeScreens, index) => { 
          return (
@@ -27,4 +29,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default SectionWrapper( Hero, 'hero' );

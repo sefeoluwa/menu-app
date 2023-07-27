@@ -1,9 +1,14 @@
-import React from 'react'
+import  Confetti  from './Confetti';
+
 
 function About() {
   return (
-    <div>About</div>
-  )
+    <>
+      
+
+      <Confetti />
+    </>
+  );
 }
 
-export default About
+export default About;

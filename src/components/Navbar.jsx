@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -7,13 +7,13 @@ import { logo, menu, close } from "../assets";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
 
   return (
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center justify-between py-4 fixed top-0 z-50 bg-primaryColor`}
+      } w-full flex items-center justify-between py-4 pt-8 fixed top-0 z-50 bg-primaryColor`}
     >
       <div className="flex items-center gap-2">
         <Link

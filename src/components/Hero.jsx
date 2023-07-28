@@ -9,24 +9,24 @@ import { useState } from "react";
 
 function Hero() {
   const marginTopForSecondImage = 'mt-3';
-  const [imagesLoaded, setImagesLoaded] = useState(false); // Use state to track if images are loaded
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
   const handleImagesLoaded = () => {
-    setImagesLoaded(true); // Set the state to true when images are loaded
+    setImagesLoaded(true); 
   };
 
   return (
     <>
       <motion.p  variants={textVariant()} className={`${styles.heroHeadText}`}>Be a Part of My Menu</motion.p>
       <div
-        className={`mt-9 div-map h-full flex`} // Set the fixed height and use display: flex
+        className={`mt-9 div-map h-full flex`} 
         style={{ position: "relative" }}
       >
         {heroScreens.map((homeScreens, index) => { 
           return (
             <div
               key={homeScreens.name}
-              className="p-2 z-10 flex-shrink-0" // Use flex-shrink: 0 to prevent items from expanding
+              className="p-2 z-10 flex-shrink-0" 
             >
               <img
                 src={homeScreens.image}
@@ -34,8 +34,8 @@ function Hero() {
                 className={`${
                   index === 1 ? marginTopForSecondImage : ""
                 } shadow-2xl transition-transform transform scale-100 hover:scale-110 cursor-pointer`}
-                onLoad={handleImagesLoaded} // Call the function when the image is loaded
-                style={{ visibility: imagesLoaded ? "visible" : "hidden" }} // Hide the images until they are loaded
+                onLoad={handleImagesLoaded} 
+                style={{ visibility: imagesLoaded ? "visible" : "hidden" }} 
               />
             </div>
           );
@@ -43,7 +43,7 @@ function Hero() {
         <div
           className={`rectangular-box absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${
             imagesLoaded ? "" : "hidden"
-          }`} // Hide the rectangular box until images are loaded
+          }`} 
         ></div>
       </div>
     </>

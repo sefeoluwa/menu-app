@@ -1,5 +1,4 @@
-/* eslint-disable react-refresh/only-export-components */
-import  Confetti  from './Confetti';
+import Confetti from './Confetti';
 import { motion } from 'framer-motion';
 import { styles } from "../styles"
 import  SectionWrapper  from '../hoc/SectionWrapper';
@@ -7,30 +6,36 @@ import { fadeIn, textVariant } from '../utils/motion';
 import { screens } from "../constants"
 import { Tilt } from 'react-tilt';
 
-
-
 function About() {
-
- 
- 
   return (
     <>
-      <motion.div variants={textVariant()}>
-      <h2 className={styles.aboutHeadText} >No impromptu billings</h2>
-      <h2 className={styles.aboutHeadText} >No added charges</h2>
-      <h2 className={styles.aboutHeadText} >All within your keyboard reach</h2>
+    <div className='h-[60vh] overflow-visible'>
+
+    <motion.div variants={textVariant()}>
+        <h2 className={styles.aboutHeadText} >No impromptu billings</h2>
+        <h2 className={styles.aboutHeadText} >No added charges</h2>
+        <h2 className={styles.aboutHeadText} >All within your keyboard reach</h2>
       </motion.div>
-     
-      <Tilt>
-        <motion.div >
-        {screens.map((screens) => (
-          <img src={screens.image} key={screens.name}/>
+
+      <motion.div variants={fadeIn("right", "slide", "0.8")} className='flex justify-center gap-14 pt-[30vh]  items-center h-2/4'>
+        {screens.map((screen) => (
+          <Tilt
+            key={screen.name}
+            options={{
+              max: 45,
+              scale: 1,
+              speed: 450,
+            }}
+          >
+            <img src={screen.image} alt={screen.name} className="shadow-2xl screens  h-[50vh]" />
+          </Tilt>
         ))}
-        </motion.div>
-      </Tilt>  
+      </motion.div>
+
+    </div>
       <Confetti />
     </>
   );
 }
 
-export default SectionWrapper(About, "about")
+export default SectionWrapper(About, "about");

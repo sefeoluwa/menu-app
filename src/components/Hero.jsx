@@ -35,7 +35,7 @@ function Hero() {
                   index === 1 ? marginTopForSecondImage : ""
                 } shadow-2xl transition-transform transform scale-100 hover:scale-110 cursor-pointer`}
                 onLoad={handleImagesLoaded} 
-                style={{ visibility: imagesLoaded ? "visible" : "hidden" }} 
+                style={{ objectFit: imagesLoaded ? "cover" : "none" }} 
               />
             </div>
           );

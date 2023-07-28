@@ -15,8 +15,9 @@ function Footer() {
       ))}</div>
     </div>
 
-    <div className="company">
-    <p>Company</p>
+   <div className="flex w-[55vw] justify-around mr-12 mb-14 h-auto">
+   <div className="company">
+    <p className="ml-9 font-bold">Company</p>
     <ul className="list-none z-50 justify-between">
           {company.map((link) => (
             <li
@@ -30,7 +31,7 @@ function Footer() {
     </div>
 
     <div className="help">
-    <p>Help</p>
+    <p className="ml-9 font-bold">Help</p>
     <ul className="list-none z-50  flex flex-col justify-between">
           {help.map((link) => (
             <li
@@ -45,7 +46,7 @@ function Footer() {
     </div>
 
     <div className="terms">
-    <p>Terms</p>
+    <p className="ml-9 font-bold">Terms</p>
     <ul className="list-none z-50 justify-between flex flex-col w-auto">
           {terms.map((link) => (
             <li
@@ -57,6 +58,7 @@ function Footer() {
           ))}
         </ul>
     </div>
+   </div>
     </motion.div>
    </>
   )

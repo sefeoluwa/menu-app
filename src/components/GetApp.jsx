@@ -2,14 +2,14 @@
 import { motion } from "framer-motion";
 import SectionWrapper from '../hoc/SectionWrapper';
 import { download } from "../constants";
-import { textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
 
 
 function GetApp() {
   return (
     <>
       <motion.p variants={textVariant()} className="flex justify-center text-[24px] mt-9">Get the App and begin to search the menu of your favourte restaurants.</motion.p>
-      <motion.div className="flex justify-center items-center  p-5">
+      <motion.div variants={fadeIn()} className="flex justify-center items-center  p-5">
         {download.map((download) => { 
           return (
           <img 

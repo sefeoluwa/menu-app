@@ -9,9 +9,9 @@ function Footer() {
     <motion.div variants={textVariant()} className='pt-[5vh] flex justify-around mr-7 footer'>
     <div>
       <h3 className="text-[35px] font-bold">My Menu</h3>
-      <p>Search the menu of your favorite restaurants</p>
-      <div className="flex ">{icons.map((icons) => (
-        <img src={icons.icon} key={icons.name} className='m-3  cursor-pointer img'/>
+      <p className="w-60 ">Search the menu of your favorite restaurants</p>
+      <div className="flex icons">{icons.map((icons) => (
+        <img src={icons.icon} key={icons.name} className='m-3   cursor-pointer img'/>
       ))}</div>
     </div>
 

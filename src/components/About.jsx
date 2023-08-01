@@ -7,12 +7,16 @@ import { slideIn, textVariant } from '../utils/motion';
 import { screens } from "../constants"
 import { Tilt } from 'react-tilt';
 import AnimatedSection  from './AnimatedSection';
+import { useRef } from 'react';
 
 function About() {
+  const scrollRef = useRef(null)
   return (
     <>
    <AnimatedSection>
-   <div className='h-[60vh] about overflow-visible'>
+   <div className='h-[60vh] about overflow-visible' 
+   ref={scrollRef}
+   >
     <motion.div variants={textVariant()}>
         <h2 className={`${styles.aboutHeadText} about-heading`} >No impromptu billings</h2>
         <h2 className={`${styles.aboutHeadText} about-heading`} >No added charges</h2>
@@ -20,7 +24,12 @@ function About() {
       </motion.div>
 
       
-      <motion.div variants={slideIn("left", "fade", ".5", "1")} className='flex justify-center gap-14 pt-[30vh] about-screens  items-center h-2/4'>
+      <motion.div
+       variants={slideIn("left", "fade", ".5", "1")} 
+       initial={{ opacity: 0 }}
+       whileInView={{ opacity: 1 }}
+       viewport={{ root: scrollRef }}
+       className='flex justify-center gap-14 pt-[30vh] about-screens  items-center h-2/4'>
         {screens.map((screen) => (
           <Tilt
             key={screen.name}

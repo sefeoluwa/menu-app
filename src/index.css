@@ -50,3 +50,13 @@
   .icons{
     margin-right: 10px;
   }
+
+
+  @media screen and (max-width:800px) {
+   
+    .hero-heading{
+      font-size: 43px;
+    }
+
+    
+  }

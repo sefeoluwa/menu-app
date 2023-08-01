@@ -32,6 +32,7 @@ export const textVariant = (delay) => {
           delay: delay,
           duration: duration,
           ease: "easeOut",
+          staggerChildren: 0.7,
         },
       },
     };
@@ -70,6 +71,7 @@ export const textVariant = (delay) => {
           delay: delay,
           duration: duration,
           ease: "easeOut",
+          staggerChildren: 0.7,
         },
       },
     };

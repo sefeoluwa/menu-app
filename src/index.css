@@ -58,5 +58,26 @@
       font-size: 43px;
     }
 
-    
+    .hero-screens:nth-of-type(2){
+      display: none;
+    }
+
+    .hero-screens{
+      overflow-y: hidden;
+      margin-top: 2vh;
+
+    }
+
+    .hero-screens-container{
+      height: 80vh;
+      padding-top: 10vh;
+      margin-top: -4vh;
+    }
+
+    .rectangular-box{
+      width: 90vw;
+      
+    }
+
+
   }

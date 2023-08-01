@@ -79,6 +79,11 @@
       
     }
 
+    .get-text{
+      text-align: center;
+      font-size: 1.5em;
+    }
+
     .app-links{
       max-width: 45vw;
     }
@@ -118,10 +123,20 @@
      gap: 24px;
      padding: 10px;
      margin-bottom: -6vh;
+     padding-left: 11vw;
     }
 
     .footer-links > li > a {
       font-size: 11.5px;
+    }
+
+    .terms{
+      padding-top: 15px;
+    }
+
+    .terms-text{
+      width: 40vw;
+     
     }
 
   }

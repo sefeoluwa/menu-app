@@ -52,7 +52,7 @@ function Footer() {
           {terms.map((link) => (
             <li
               key={link.id}
-              className="text-[20px] pl-10 font-medium cursor-pointer p-3"
+              className="text-[20px] pl-10 font-medium terms-text  cursor-pointer p-3"
               >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>

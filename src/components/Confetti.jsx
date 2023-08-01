@@ -23,7 +23,7 @@ const Confetti = () => {
         this.color = color;
         this.angle = Math.random() * 360;
         this.speed = 1 + Math.random() * 5;
-        this.radius = 15 + Math.random() * 4;
+        this.radius = 20 + Math.random() * 4;
         this.d = 2;
         this.tilt = Math.floor(Math.random() * 10) - 10;
       }

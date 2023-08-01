@@ -70,20 +70,20 @@
 
     .hero-screens > img{
       max-width: 45vw;
-      margin-top: 7vh;
+      margin-top: 14vh;
     }
 
     .hero-screens-container{
       max-height: 80vh;
       padding-top: 10vh;
-      margin-top: -4vh;
+      margin-top: -8vh;
      
     }
 
     .rectangular-box{
       max-width: 80vw;
-      max-height: 40vh;
-      
+      height: 40vh;
+      margin-top: 22vh;
     }
 
     .get-text{

@@ -25,7 +25,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="my menu logo" className="w-9 h-9 object-contain" />
-          <p className="text-[30px] font-bold cursor-pointer">My Menu</p>
+          <p className="text-[30px] font-bold cursor-pointer app-logo">My Menu</p>
         </Link>
       </div>
 

@@ -53,6 +53,10 @@
 
 
   @media screen and (max-width:800px) {
+
+    .app-logo{
+      font-size: 28px;
+    }
    
     .hero-heading{
       font-size: min(35px, 40px);

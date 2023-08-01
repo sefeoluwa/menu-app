@@ -5,6 +5,7 @@ import SectionWrapper from '../hoc/SectionWrapper';
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
 import { useState } from "react";
+import  Confetti  from "./Confetti"
 
 
 function Hero() {
@@ -17,7 +18,8 @@ function Hero() {
 
   return (
     <>
-      <motion.p  variants={textVariant()} className={`${styles.heroHeadText}`}>Be a Part of My Menu</motion.p>
+    <Confetti />
+      <motion.p  variants={textVariant()} className={`${styles.heroHeadText} hero-heading`}>Be a Part of My Menu</motion.p>
       <div
         className={`mt-9 div-map h-full flex`} 
         style={{ position: "relative" }}

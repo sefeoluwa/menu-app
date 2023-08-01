@@ -55,7 +55,8 @@
   @media screen and (max-width:800px) {
    
     .hero-heading{
-      font-size: 43px;
+      font-size: min(35px, 40px);
+      width:auto;
     }
 
     .hero-screens:nth-of-type(2){
@@ -64,18 +65,24 @@
 
     .hero-screens{
       overflow-y: hidden;
-      margin-top: 2vh;
+      
+    }
 
+    .hero-screens > img{
+      max-width: 45vw;
+      margin-top: 7vh;
     }
 
     .hero-screens-container{
-      height: 80vh;
+      max-height: 80vh;
       padding-top: 10vh;
       margin-top: -4vh;
+     
     }
 
     .rectangular-box{
-      width: 90vw;
+      max-width: 80vw;
+      max-height: 40vh;
       
     }
 
@@ -85,7 +92,7 @@
     }
 
     .app-links{
-      max-width: 50vw;
+      max-width: 45vw;
     }
 
     .about{
@@ -93,7 +100,7 @@
     }
 
     .about-heading{
-      font-size: 30px;
+      font-size: 25px;
 
     }
 

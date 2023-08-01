@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import About from "./About";
 import Footer from "./Footer"
 import GetApp from "./GetApp"
+import AnimatedSection from "./AnimatedSection";
 
 export {
     Navbar,
@@ -10,4 +11,5 @@ export {
     About,
     Footer,
     GetApp,
+    AnimatedSection,
 }

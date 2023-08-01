@@ -21,14 +21,14 @@ function Hero() {
     <Confetti />
       <motion.p  variants={textVariant()} className={`${styles.heroHeadText} hero-heading`}>Be a Part of My Menu</motion.p>
       <div
-        className={`mt-9 div-map h-full flex`} 
+        className={`mt-9 div-map h-full hero-screens-container flex `} 
         style={{ position: "relative" }}
       >
         {heroScreens.map((homeScreens, index) => { 
           return (
             <div
               key={homeScreens.name}
-              className="p-2 z-10 flex-shrink-0" 
+              className="p-2 z-10 flex-shrink-0 hero-screens" 
             >
               <img
                 src={homeScreens.image}

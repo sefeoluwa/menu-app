@@ -3,7 +3,7 @@ import { heroScreens } from "../constants";
 import { styles } from "../styles";
 import SectionWrapper from '../hoc/SectionWrapper';
 import { motion } from "framer-motion";
-import { textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
 import { useState } from "react";
 import  Confetti  from "./Confetti"
 
@@ -20,7 +20,8 @@ function Hero() {
     <>
     <Confetti />
       <motion.p  variants={textVariant()} className={`${styles.heroHeadText} hero-heading`}>Be a Part of My Menu</motion.p>
-      <div
+      <motion.div
+      variants={fadeIn("up", "slide", ".5", "1")}
         className={`mt-9 div-map h-full hero-screens-container flex `} 
         style={{ position: "relative" }}
       >
@@ -47,7 +48,7 @@ function Hero() {
             imagesLoaded ? "" : "hidden"
           }`} 
         ></div>
-      </div>
+      </motion.div>
     </>
   );
 }

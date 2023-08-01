@@ -6,12 +6,12 @@ import { textVariant } from '../utils/motion';
 function Footer() {
   return (
    <>
-    <motion.div variants={textVariant()} className='pt-[5vh] flex justify-around mr-7 footer'>
+    <motion.div variants={textVariant()} className='pt-[5vh] mb-[4vh] flex justify-around mr-7 footer'>
     <div>
       <h3 className="text-[35px] font-bold">My Menu</h3>
       <p className="w-60 ">Search the menu of your favorite restaurants</p>
       <div className="flex icons">{icons.map((icons) => (
-        <img src={icons.icon} key={icons.name} className='m-3   cursor-pointer img'/>
+        <img src={icons.icon} key={icons.name} className='m-2  w-12 cursor-pointer img' alt={icons.name}/>
       ))}</div>
     </div>
 

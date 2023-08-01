@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import Confetti from './Confetti';
 import { motion } from 'framer-motion';
 import { styles } from "../styles"
@@ -27,7 +28,7 @@ function About() {
               speed: 450,
             }}
           >
-            <img src={screen.image} alt={screen.name} className="shadow-2xl screens  h-[50vh]" />
+            <img src={screen.image} alt="app screenshots" className="shadow-2xl screens  h-[50vh]"/>
           </Tilt>
         ))}
       </motion.div>

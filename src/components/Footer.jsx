@@ -11,7 +11,7 @@ function Footer() {
       <h3 className="text-[35px] font-bold">My Menu</h3>
       <p className="w-60 ">Search the menu of your favorite restaurants</p>
       <div className="flex icons">{icons.map((icons) => (
-        <img src={icons.icon} key={icons.name} className='m-2  w-12 cursor-pointer img' alt={icons.name}/>
+        <img src={icons.icon} key={icons.name} className='m-2  w-12 cursor-pointer img' alt="social media"/>
       ))}</div>
     </div>
 

@@ -79,6 +79,10 @@
       
     }
 
+    .app-links{
+      max-width: 45vw;
+    }
+
     .about{
       height:auto;
     }

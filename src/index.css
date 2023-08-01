@@ -79,5 +79,19 @@
       
     }
 
+    .about{
+      height:auto;
+    }
+
+    .about-heading{
+      font-size: 30px;
+
+    }
+
+    .about-screens{
+      margin-top: -15vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
 
   }

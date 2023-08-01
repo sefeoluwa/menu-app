@@ -79,7 +79,7 @@ const Confetti = () => {
     };
   }, [width, height, confettiColors]);
 
-  return <canvas ref={canvasRef} style={{ position: 'fixed', top: 0, left: 0, zIndex: 10 }} />;
+  return <canvas ref={canvasRef} style={{ position: 'fixed', top: 0, left: 0,  pointerEvents: 'none' }} />;
 };
 
   

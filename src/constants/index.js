@@ -84,7 +84,7 @@ import {
     },
     {
       id: "cancel",
-      title: "Cancel your order",
+      title: "Cancel Order",
     },
     {
       id: "press",

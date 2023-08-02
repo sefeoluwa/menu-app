@@ -126,6 +126,15 @@
       width: 90vw;
     }
 
+    .footer-head{
+      font-size: 23px;
+    }
+
+    .icons > img {
+      width: 41px;
+      height: 41px;
+    }
+
     .footer-menu{
       margin-left: 2px;
       margin-top: -6vh;
@@ -158,6 +167,7 @@
     .help > ul, .company > ul {
       
       width:50vw;
+     
     }
 
   }

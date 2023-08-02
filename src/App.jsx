@@ -1,4 +1,4 @@
-import {About, Footer, Hero, Navbar, GetApp} from "./components"
+import { About, Footer, Hero, Navbar } from "./components"
 import { BrowserRouter } from "react-router-dom"
 
 
@@ -7,12 +7,11 @@ function App() {
   
   return (
     <BrowserRouter>
-      <div className= "bg-primary py-4 h-20">
+      <div className= "bg-primary py-4 h-20 dark:bg-primary">
         <Navbar />
       </div>
-     <div className="bg-primary">
+     <div className="bg-primary dark:bg-primary">
         <Hero />
-        <GetApp />
         <About />
       </div>
       <Footer />

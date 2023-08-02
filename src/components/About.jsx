@@ -14,7 +14,7 @@ function About() {
   return (
     <>
    <AnimatedSection>
-   <div className='h-[60vh] about overflow-visible' 
+   <div className='h-[64vh] about overflow-visible' 
    ref={scrollRef}
    >
     <motion.div variants={textVariant()}>
@@ -29,7 +29,7 @@ function About() {
        initial={{ opacity: 0 }}
        whileInView={{ opacity: 1 }}
        viewport={{ root: scrollRef }}
-       className='flex justify-center gap-14 pt-[30vh] about-screens  items-center h-2/4'>
+       className='flex justify-center gap-14 pt-[32vh] about-screens  items-center h-2/4'>
         {screens.map((screen) => (
           <Tilt
             key={screen.name}

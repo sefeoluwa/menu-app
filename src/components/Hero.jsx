@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { useState } from "react";
 import  Confetti  from "./Confetti"
+import GetApp from "./GetApp";
 
 
 function Hero() {
@@ -49,6 +50,7 @@ function Hero() {
           }`} 
         ></div>
       </motion.div>
+      <GetApp />
     </>
   );
 }

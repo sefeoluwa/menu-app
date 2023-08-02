@@ -1,8 +1,4 @@
-# React + Vite
+Live Preview: https://mennu-app.netlify.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Screenshot from 2023-08-02 16-39-21](https://github.com/sefeoluwa/menu-app/assets/104764597/5df81f8b-4fc6-4c07-bc4a-230422484c86)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

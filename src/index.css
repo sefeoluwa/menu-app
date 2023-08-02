@@ -171,3 +171,129 @@
     }
 
   }
+
+
+
+  @media screen and (min-width: 801px) and (max-width: 1280px) {
+
+   
+    .app-logo{
+        font-size: 25px;
+    }
+
+    .hero-heading{
+        font-size: 40px;
+        width:auto;
+    }
+
+    .get-text{
+      margin-top: 2vh;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .hero-screens{
+     
+      margin-top: 2vh;
+    }
+
+    .hero-screens > img{
+      max-width: 30vw;
+      box-shadow: 0 4px 2px -2px gray;
+    }
+
+    .hero-screens-container{
+      max-height: 80vh;
+      padding-top: 10vh;
+      margin-top: -8vh;
+     
+    }
+
+    .rectangular-box{
+      max-width: 90vw;
+      height: 40vh;
+      margin-top: 22vh;
+    }
+
+    .app-links{
+      max-width: 45vw;
+    }
+
+    .about{
+      height:auto;
+      margin-top: -5vh;
+    }
+
+    .about-heading{
+      font-size: 30px;
+
+    }
+
+    .about-screens{
+      margin-top: -15vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-left: 8vw;
+    }
+
+    .screens{
+      max-height: 420px;
+      
+    }
+
+    .footer{
+      flex-direction: column;
+      height:auto;
+      overflow: hidden;
+      width: 90vw;
+
+    }
+
+    .footer-head{
+      font-size: 25px;
+    }
+
+    .icons > img {
+      width: 45px;
+      height: 45px;
+    }
+
+    .footer-menu{
+      margin-left: 10vw;
+      margin-top: -14vh;
+      padding: 7px;
+      margin-bottom: 4vh;
+    }
+
+    .footer-links{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 24px;
+     padding: 10px;
+     margin-bottom: -6vh;
+     padding-left: 45vw;
+    }
+
+    .terms{
+      padding-top: 15px;
+      width: 30vw;
+    }
+
+    .terms-text{
+      width: 50vw;
+     
+    }
+
+    .footer-link{
+      font-size: 16px;
+    }
+
+    .help > ul, .company > ul {
+      
+      width:40vw;
+     
+    }
+
+ 
+
+}

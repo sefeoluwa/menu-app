@@ -9,10 +9,10 @@ function Footer() {
    <>
     <motion.div variants={textVariant()} className=' footer pt-[5vh] mb-[4vh] flex justify-around mr-7 footer'>
     <div className='footer-menu'>
-      <h3 className="text-[35px] font-bold">My Menu</h3>
+      <h3 className="text-[34px] font-bold footer-head">My Menu</h3>
       <p className="w-60 ">Search the menu of your favorite restaurants</p>
       <div className="flex icons">{icons.map((icons) => (
-        <img src={icons.icon} key={icons.name} className='m-2  w-12 cursor-pointer img' alt="social media"/>
+        <img src={icons.icon} key={icons.name} className='mr-5 mt-3 w-12 cursor-pointer img' alt="social media"/>
       ))}</div>
     </div>
 
@@ -33,11 +33,11 @@ function Footer() {
 
     <div className="help">
     <p className="ml-9 font-bold text-[23px]">Help</p>
-    <ul className="list-none z-50  flex flex-col justify-between">
+    <ul className="list-none z-50  flex flex-col justify-between mr-4">
           {help.map((link) => (
             <li
               key={link.id}
-              className="text-[20px] pl-10 font-medium cursor-pointer p-3 footer-link"
+              className="text-[20px] pl-10 font-medium cursor-pointer p-3 footer-link "
               
             >
               <a href={`#${link.id}`}>{link.title}</a>
@@ -65,4 +65,4 @@ function Footer() {
   )
 }
 
-export default SectionWrapper(Footer, 'support')
+export default Footer

@@ -9,9 +9,9 @@ import { Tilt } from "react-tilt";
 function GetApp() {
   return (
     <>
-      <motion.p variants={textVariant()} className="flex justify-center text-[24px] mt-9 get-text">Get the App and begin to search the menu of your favourte restaurants.</motion.p>
+      <motion.p variants={textVariant()} className="flex justify-center text-[24px] get-text">Get the App and begin to search the menu of your favourte restaurants.</motion.p>
      
-     <motion.div variants={fadeIn()} className="flex justify-center items-center  p-5">
+     <motion.div variants={fadeIn()} className="flex justify-center items-center  p-1">
         {download.map((download) => { 
           return (
             <Tilt key={download.name} >
